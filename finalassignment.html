@@ -1,0 +1,154 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <style>
+        .navbar {
+            background-color: #101111; 
+        }
+        .navbar-brand {
+            color: #09cfd6; 
+        }
+        .nav-link {
+            color: #0e6083; 
+        }
+        .accordion-button {
+            background-color: #08cfc5; 
+            color: #eeecec;
+        }
+        .accordion-button:hover {
+            background-color: #0feb7d;
+            color: aliceblue;
+        }
+        .accordion-body {
+            background-color: #60a7e9; 
+            color: #f3f0f0; 
+        }
+        .card-body {
+            padding: 15px; 
+        }
+        .card-text {
+            font-size: 16px; 
+            color: #3af08c; 
+        }
+        .list-group-item:hover {
+            background-color: #7fee5e; 
+        }
+        .list-group {
+            max-width: 400px; 
+            margin: 20px auto; 
+            padding: 0;
+        }
+        .list-group-item.active {
+            background-color: #5b6af5; 
+            color: #ffffff; 
+            border-color: #007bff; 
+        }
+    </style>
+  </head>
+  <body>
+    <!-- This is Navbar including 5 pages as required -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Our Pages</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="table.html">Table</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="form.html">Form</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="OrderedList.html">Ordered List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="UnorderedList.html">Unordered List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="FormalNavBar.html">Formal Navigation Bar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Alert -->
+      <div class="alert alert-info" role="alert">
+        !!Press the Above options to take you to different page!!
+      </div>
+      <!-- Accordion -->
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Australia
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This country is one of the popular destinations among international students for studies.</strong> So that's why the Australian Government has implemented strict rules for visas.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Canada
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This was one of the most popular destinations among international students.</strong> But because of various struggles and problems, its popularity is still decreasing.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              USA
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This country is getting famous among international students.</strong> Though it is expensive in comparison to other countries, it is still becoming popular among teenagers due to various new opportunities provided by the US government.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card -->
+      <div class="card" style="width: 18rem;">
+        <img src="graph.png" class="card-img-top" alt="This">
+        <div class="card-body">
+          <p class="card-text">Here is the graphical comparison of the choice made by international students nowadays. Please follow</p>
+        </div>
+      </div>
+      <!-- Checklist -->
+      <ul class="list-group">
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" onclick="showAlert()">
+          <label class="form-check-label" for="firstCheckbox">IELTS</label>
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox" onclick="showAlert()">
+          <label class="form-check-label" for="secondCheckbox">PTE</label>
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" onclick="showAlert()">
+          <label class="form-check-label" for="thirdCheckbox">SAT</label>
+        </li>
+      </ul>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--When you press on checklist the script gets activated-->
+    <script>   
+        function showAlert() {
+            alert('Thank you for making a choice!');
+        }
+    </script>
+  </body>
+</html>
